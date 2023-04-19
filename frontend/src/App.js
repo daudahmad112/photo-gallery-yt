@@ -9,7 +9,7 @@ function App() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/get")
+    axios.get("https://photogallery-hgt4.onrender.com/api/get")
     .then((res) => {
       console.log(res.data);
       setPhotos(res.data);
