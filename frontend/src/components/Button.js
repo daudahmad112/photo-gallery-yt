@@ -12,7 +12,7 @@ const handleChange = (e) =>{
   const formData= new FormData();
   formData.append("photo",e.target.files[0]);
 
-  axios.post("http://localhost:5000/api/save", formData)
+  axios.post("https://photogallery-hgt4.onrender.com/api/save", formData)
   .then((res) => {
     console.log(res.data);
   })
