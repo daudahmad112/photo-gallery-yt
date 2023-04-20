@@ -4,7 +4,7 @@ import axios from "axios";
 
 
 
-const Button = () => {
+const Button = ({setUpdateUI}) => {
 
 const handleChange = (e) =>{
   e.preventDefault();
@@ -15,6 +15,7 @@ const handleChange = (e) =>{
   axios.post("https://photogallery-hgt4.onrender.com/api/save", formData)
   .then((res) => {
     console.log(res.data);
+    setUpdateUI(res.data._id);
   })
   .catch((err)=> console.log(err));
 };
