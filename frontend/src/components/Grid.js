@@ -10,8 +10,6 @@ const Grid = ({photos}) => {
                     <img
                         src={`https://photogallery-hgt4.onrender.com/uploads/${photo}`}
                         alt="grid_image"
-                        height="200"
-                        width="300"
                     />
                 </div>
             ))}
